@@ -13,8 +13,12 @@
 # Passos do projeto 🗺
 
 ### 1-No terminal do VS Code ao terminal do windows, utilizar o comando composer create-project laravel/laravel --prefer-dist
+
 ### 2-Ajustar o arquivo de rotas
-### 3-Criar a primeira View(Página)
+
+### 3-Criar o primeiro Controller (Home)
+
+-   Usar o comando `php artisan make:controller HomeController --invokable` para um controlador com apenas uma função/método
 
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
