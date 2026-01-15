@@ -1,4 +1,22 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# O que é este projeto? 🤔
+
+### Projeto desenvolvido usando Framework Laravel e de autoria do curso LaravelPro da TreinaWeb
+
+# Ferramentas utilizadas? 🛠
+
+### 1) PHP (versão thread safe)
+
+### 2) Composer
+
+### 3) VS Code
+
+# Passos do projeto 🗺
+
+### 1-No terminal do VS Code ao terminal do windows, utilizar o comando composer create-project laravel/laravel --prefer-dist
+### 2-Ajustar o arquivo de rotas
+### 3-Criar a primeira View(Página)
+
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -63,4 +81,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
