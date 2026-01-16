@@ -1,8 +1,8 @@
-# O que é este projeto? 🤔
+## O que é este projeto? 🤔
 
 ### Projeto desenvolvido usando Framework Laravel e de autoria do curso LaravelPro da TreinaWeb
 
-# Ferramentas utilizadas? 🛠
+## Ferramentas utilizadas? 🛠
 
 ### 1) PHP (versão thread safe)
 
@@ -10,7 +10,15 @@
 
 ### 3) VS Code
 
-# Passos do projeto 🗺
+## Extensões usadas
+
+### Laravel Blade formatter (para indentar o que for feito usando o Blade)
+
+### PHP Intelephense (Verificar a orientação da extensão para desativar a opção do VS code para PHP)
+
+### PHP Namespace Resolver (para auxiliar a importar as classes)
+
+## Passos do projeto 🗺
 
 ### 1-No terminal do VS Code ao terminal do windows, utilizar o comando composer create-project laravel/laravel --prefer-dist
 
@@ -19,6 +27,11 @@
 ### 3-Criar o primeiro Controller (Home)
 
 -   Usar o comando `php artisan make:controller HomeController --invokable` para um controlador com apenas uma função/método
+
+### Criar layouts para reaproveitar componentes
+
+- Criar o diretório dos componentes com o comando `php artisan make:component layout --view` (esse view no final é para não criar uma classe component)
+- Pegar o conteúdo base de todas as views e colocar em layout.blade.php
 
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
