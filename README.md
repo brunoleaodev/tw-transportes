@@ -30,8 +30,26 @@
 
 ### Criar layouts para reaproveitar componentes
 
-- Criar o diretório dos componentes com o comando `php artisan make:component layout --view` (esse view no final é para não criar uma classe component)
-- Pegar o conteúdo base de todas as views e colocar em layout.blade.php
+-   Criar o diretório dos componentes com o comando `php artisan make:component layout --view` (esse view no final é para não criar uma classe component)
+-   Pegar o conteúdo base de todas as views e colocar em layout.blade.php
+
+### 4-Página de Rastreamento
+
+#### 4.1-Controller do Rastreamento
+
+-   Usar o comando `php artisan make:controller RastreamentoController --invokable` para um controlador com apenas uma função/método
+
+#### 4.2-Rota do Rastreamento
+
+-   No arquivo web.php colocar `Route::get('/rastreamento', RastreamentoController::class);`
+
+#### 4.3-Criar a view da página de rastreamento
+
+-   Em resources->view criar uma pasta chamada frete e dentro dela criar o arquivo rastreamento.blade.php
+
+#### 4.4 - Direcionar o controller de rastreamento para view correspondente
+
+-   Dentro do método \_\_invoke inserir: `return view('frete.rastreamento');`
 
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
