@@ -61,6 +61,8 @@ facilitando a criação, modificação e reversão de alterações estruturais e
 
 -   a) Migration Clientes: no terminal usar o comando: `php artisan make:migration CreateClientesTable`
 -   Criada a Migration, ajustar o método dela de acordo com a tabela que será usada (Clientes)
+
+```
     public function up(): void
     {
     Schema::create('clientes', function (Blueprint $table) {
@@ -70,9 +72,13 @@ facilitando a criação, modificação e reversão de alterações estruturais e
     $table->timestamps();
     });
     }
+```
+
 -   b) Migration Frete: seguir mesmo comando da Clientes com a seguinte alteração: `php artisan make:migration CreateFretesTable`
-- Criada a Migration ajustar o método:
-`public function up(): void
+-   Criada a Migration ajustar o método:
+
+```
+public function up(): void
     {
         Schema::create('fretes', function (Blueprint $table) {
             $table->id();
@@ -87,6 +93,7 @@ facilitando a criação, modificação e reversão de alterações estruturais e
             $table->timestamps();
         });
     }`
+```
 
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
