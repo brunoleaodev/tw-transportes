@@ -112,3 +112,6 @@ public function up(): void
 ```
 ##### - Criadas as Migrations executá-las
 - Comando `php artisan migrate`
+
+#### 6 - Trabalhando com os Models
+- Para criar via linha de comando é: `php artisan make:model Frete` (por convenção, melhor criar no singular diferente das migrations)
