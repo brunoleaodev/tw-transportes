@@ -30,14 +30,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="hover:bg-gray-50 transition-colors border-b">
-                    <td class="px-6 py-4">
-                        Transferido da unidade A para unidade B
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        01/05/2026
-                    </td>
-                </tr>
+                @foreach ($frete->etapas as $etapa)
+                    <tr class="hover:bg-gray-50 transition-colors border-b">
+                        <td class="px-6 py-4">
+                            {{ $etapa->descricao }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            {{ $etapa->created_at }}
+                        </td>
+                    </tr>
+                @endforeach
+
             </tbody>
         </table>
     </div>

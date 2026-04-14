@@ -14,7 +14,9 @@ class RastreamentoController extends Controller
     {
         //
 
-        $frete = Frete::where('codigo_rastreio', 1234)->first();
+        $frete = Frete::where('codigo_rastreio', 1234)
+            ->with('etapas')
+            ->first();
         return view('frete.rastreamento', [
             'frete' => $frete
         ]);
