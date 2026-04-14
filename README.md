@@ -20,7 +20,7 @@
 
 ## Passos do projeto 🗺
 
-### 1-No terminal do VS Code ao terminal do windows, utilizar o comando composer create-project laravel/laravel --prefer-dist
+### 1-No terminal do VS Code ao terminal do windows, utilizar o comando `composer create-project laravel/laravel tw-transportes --prefer-dist`
 
 ### 2-Ajustar o arquivo de rotas
 
@@ -97,21 +97,25 @@ public function up(): void
 
 -   c) Migration Etapas: seguir mesmo comando da Clientes com a seguinte alteração: `php artisan make:migration CreateEtapasTable`
 -   Criada a Migration ajustar o método:
- ```
- public function up(): void
-    {
-        Schema::create('etapas', function (Blueprint $table) {
-            $table->id();
-            $table->string('descricao');
 
-            $table->foreignId('frete_id')->constrained('fretes')->onDelete('cascade');
-
-            $table->timestamps();
-        });
-    }
 ```
+public function up(): void
+   {
+       Schema::create('etapas', function (Blueprint $table) {
+           $table->id();
+           $table->string('descricao');
+
+           $table->foreignId('frete_id')->constrained('fretes')->onDelete('cascade');
+
+           $table->timestamps();
+       });
+   }
+```
+
 ##### - Criadas as Migrations executá-las
-- Comando `php artisan migrate`
+
+-   Comando `php artisan migrate`
 
 #### 6 - Trabalhando com os Models
-- Para criar via linha de comando é: `php artisan make:model Frete` (por convenção, melhor criar no singular diferente das migrations)
+
+-   Para criar via linha de comando é: `php artisan make:model Frete` (por convenção, melhor criar no singular diferente das migrations)
